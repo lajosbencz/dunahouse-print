@@ -96,5 +96,5 @@ $mpdf->WriteHTML($html);
 if(PHP_SAPI === 'cli') {
     $mpdf->Output($estateId . '.pdf');
 } else {
-    $mpdf->Output();
+    $mpdf->Output($estateId.'.pdf', 'D');
 }
