@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+const URL_KEY = 'dunahouse_estate_url';
+
 $urlToScrape = '';
 
 if(PHP_SAPI === 'cli') {
@@ -9,8 +11,8 @@ if(PHP_SAPI === 'cli') {
         $urlToScrape = $argv[1];
     }
 } else {
-    if(array_key_exists('url', $_POST)) {
-        $urlToScrape = $_POST['url'];
+    if(array_key_exists(URL_KEY, $_POST)) {
+        $urlToScrape = $_POST[URL_KEY];
     }
 }
 
