@@ -22,7 +22,7 @@ if(!$urlToScrape) {
 
 
 $urlHash = md5($urlToScrape);
-$tempFile = $urlHash.'.html';
+$tempFile = sys_get_temp_dir() . '/dunahouse-' . $urlHash.'.html';
 if(!file_exists($tempFile)) {
     file_put_contents($tempFile, file_get_contents($urlToScrape));
 }
