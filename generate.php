@@ -17,7 +17,11 @@ if(PHP_SAPI === 'cli') {
 }
 
 if(!$urlToScrape) {
-    die('URL must be specified!<br/><a href="/">Back</a>');
+    die('URL must be specified!<br/><a href="javascript:window.close()">Back</a>');
+}
+
+if(!preg_match('/^https?:\/\/(www\.)?dh\.hu\/ingatlan\//', $urlToScrape)) {
+    die('Invalid URL!<br/><a href="javascript:window.close()">Back</a>');
 }
 
 
