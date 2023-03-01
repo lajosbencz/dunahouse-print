@@ -64,10 +64,10 @@ $imgSize = 460;
         <tbody>
         <tr>
             <td rowspan="2"><img src="<?= $estateImages[0] ?>" alt="<?= $estateTitle ?>" width="<?= $imgSize ?>"/></td>
-            <td><img src="<?= $estateImages[1] ?>" alt="<?= $estateTitle ?>" width="<?= $imgSize / 2 ?>"/></td>
+            <td><img src="<?= $estateImages[2] ?>" alt="<?= $estateTitle ?>" width="<?= $imgSize / 2 ?>"/></td>
         </tr>
         <tr>
-            <td><img src="<?= $estateImages[1] ?>" alt="<?= $estateTitle ?>" width="<?= $imgSize / 2 ?>"/></td>
+            <td><img src="<?= $estateImages[3] ?>" alt="<?= $estateTitle ?>" width="<?= $imgSize / 2 ?>"/></td>
         </tr>
         </tbody>
     </table>
